@@ -38,16 +38,91 @@ ul{
 nav a{
     text-decoration: none;
     font-family: var(--font-texto);
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--branco);
     transition: .8s;
-    font-weight: bold;
     padding: 15px;
     border-radius: 30px;
 }
 
 nav a:hover {
     text-shadow: 0px 0px 10px white;
+}
+
+.slider {
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.list img {
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--azul-claro);
+    color: var(--amarelo);
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    filter: opacity(.7);
+}
+
+.buttons button:hover {
     background-color: var(--branco);
-    color: var(--azul-claro);
+    color: var(--azul-escuro);
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--amarelo);
+    border: 1.2px solid var(--azul-escuro);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.dots li.active {
+    width: 30px;
 }
