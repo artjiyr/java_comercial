@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-titulo: "Oswald", sans-serif;
+    --font-texto: "Lato", sans-serif;
+    --azul-escuro: #0053A8;
+    --azul-claro: #4389C5;
+    --amarelo: #FEE620;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+header {
+    background-color: var(--azul-escuro);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 195px;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: var(--font-texto);
+    font-size: 1.2em;
+    color: var(--branco);
+    transition: .8s;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px white;
+    background-color: var(--branco);
+    color: var(--azul-claro);
+}
