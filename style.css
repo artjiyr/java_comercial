@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #dddddd;
+}
+
 :root{
     --font-titulo: "Oswald", sans-serif;
     --font-texto: "Lato", sans-serif;
@@ -54,7 +58,10 @@ nav a:hover {
     max-width: 100vw;
     height: 700px;
     margin: auto;
+    margin-top: 50px;
     position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .list{
@@ -121,8 +128,167 @@ nav a:hover {
     border: 1.2px solid var(--azul-escuro);
     margin: 20px;
     border-radius: 20px;
+    transition: 1s;
 }
 
 .dots li.active {
     width: 30px;
+}
+
+/*Quem nós somos*/
+
+section#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    justify-content: center;
+    background-color: var(--azul-escuro);
+    border-top: 10px solid var(--amarelo);
+    border-bottom: 10px solid var(--amarelo);
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.495);
+    padding: 20px;
+}
+
+div.sobreConteudo {
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+div.titulo1 {
+    margin: 20px;
+}
+
+div.titulo1 h1 {
+    font-size: 5em;
+    font-family: var(--font-titulo);
+    color: var(--branco);
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.405);
+}
+
+div.textoSobre {
+    margin: 15px;
+    padding: 20px;
+}
+
+div.textoSobre p {
+    font-size: 2em;
+    color: var(--branco);
+    text-align: justify;
+}
+
+span {
+    color: var(--amarelo);
+    font-weight: 700;
+}
+
+div.imgSobre img {
+    width: 650px;
+}
+
+/*Cards*/
+
+section#catalogo {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+section#catalogo h1 {
+    font-family: var(--font-titulo);
+    margin: 50px;
+    font-size: 4em;
+    color: var(--azul-claro);
+    text-shadow: 2px 5px 8px rgb(255, 255, 255);
+}
+
+section#catalogo .botoesCategoria {
+    display: flex;
+}
+
+section#catalogo .cards {
+    margin: 40px;
+    padding: 10px;
+    width: 250px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.331);
+    transition: .7s;
+}
+
+section#catalogo .imagemCard {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section#catalogo .imagemCard i{
+    font-size: 3em;
+    color: var(--azul-escuro);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.409);
+}
+
+section#catalogo .nomeCard {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+section#catalogo .nomeCard p{
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: var(--font-titulo);
+    color: var(--azul-escuro);
+    text-align: justify;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.235);
+}
+
+section#catalogo .des {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section#catalogo .des p {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: var(--font-texto);
+    color: var(--preto);
+    text-align: justify;
+}
+
+/*hover dos cards*/
+
+section#catalogo .cards:hover {
+    transform: scale(1.3);
+    background-color: var(--azul-escuro);
+}
+
+section#catalogo .cards:hover .imagemCard i{
+    color: var(--amarelo);
+}
+
+section#catalogo .cards:hover .nomeCard p{
+    color: var(--branco);
+}
+
+section#catalogo .cards:hover .des p{
+    color: var(--branco);
+}
+
+/*Carrossel das marcas*/
+
+section#marcas {
+    margin-top: 300px;
+}
+
+section#marcas h1{
+    font-family: var(--font-titulo);
+    text-align: center;
+    font-size: 4em;
+    color: var(--azul-escuro);
 }
