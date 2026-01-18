@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "circ.out",
         scrollTrigger: {
             trigger: "#sobre",
-            start: "-20% top",
+            start: "-28% top",
             end: "85% bottom",
             scrub: 1,
         }
